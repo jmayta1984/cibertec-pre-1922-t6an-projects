@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct TaskListView: View {
-    @State var tasks:[Task] = []
-    
+    @StateObject private var viewModel = TaskListViewModel()
+     
     var body: some View {
         NavigationStack {
             List{
-                ForEach(tasks) { task in
-                    Text(task.title)
+                ForEach(viewModel.tasks) { task in
+                    VStack {
+                        Text(task.title ?? "")
+                        Text(task.content ?? "")
+                    }
                 }.onDelete(perform: { indexSet in
-                    self.tasks.remove(atOffsets: indexSet)
+                    viewModel.deleteTask(task: viewModel.tasks[indexSet.first!])
+                    
                 })
             }
             .navigationTitle("Tasks")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: {
-                        TaskDetailView { task in
-                            tasks.append(task)
+                        TaskDetailView { title, content in
+                            viewModel.addTask(title: title, content: content)
                         }
                     }) {
                         Image(systemName: "plus")

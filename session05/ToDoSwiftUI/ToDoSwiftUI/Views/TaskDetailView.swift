@@ -8,29 +8,35 @@
 import SwiftUI
 
 struct TaskDetailView: View {
+    
     @State var title: String = ""
+    @State var content: String = ""
+    
     @Environment(\.dismiss) var dismiss
-    let onAddTask: (Task) -> Void
+    
+    let onAddTask: (String, String) -> Void
     
     var body: some View {
         NavigationStack{
-            TextField("Task", text: $title).padding().textFieldStyle(.roundedBorder)
-                .toolbar{
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button(action: {
-                            let task = Task(title: title)
-                            onAddTask(task)
-                            dismiss()
-                        }){
-                            Image(systemName: "tray.and.arrow.down")
-                        }
+            VStack {
+                TextField("Title", text: $title).padding().textFieldStyle(.roundedBorder)
+                TextField("Content", text: $content).padding().textFieldStyle(.roundedBorder)
+            }
+            .toolbar{
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        onAddTask(title, content)
+                        dismiss()
+                    }){
+                        Image(systemName: "tray.and.arrow.down")
                     }
                 }
+            }
         }
     }
 }
 
 #Preview {
-    TaskDetailView { _ in }
+    TaskDetailView { _, _ in }
     
 }

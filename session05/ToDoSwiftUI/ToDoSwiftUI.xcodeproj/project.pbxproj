@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B718CB962CC7EDD7003BDAEB /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718CB952CC7EDD7003BDAEB /* TaskListViewModel.swift */; };
 		B7C928E62CBE9B73006370E2 /* ToDoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C928E52CBE9B73006370E2 /* ToDoSwiftUIApp.swift */; };
 		B7C928E82CBE9B73006370E2 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C928E72CBE9B73006370E2 /* TaskListView.swift */; };
 		B7C928EA2CBE9B74006370E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C928E92CBE9B74006370E2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B718CB952CC7EDD7003BDAEB /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		B7C928E22CBE9B73006370E2 /* ToDoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C928E52CBE9B73006370E2 /* ToDoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSwiftUIApp.swift; sourceTree = "<group>"; };
 		B7C928E72CBE9B73006370E2 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B718CB942CC7ED8B003BDAEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B718CB952CC7EDD7003BDAEB /* TaskListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		B7C928D92CBE9B72006370E2 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		B7C928E42CBE9B73006370E2 /* ToDoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B718CB942CC7ED8B003BDAEB /* ViewModels */,
 				B7C928F92CBEB527006370E2 /* Models */,
 				B7C928F82CBEB51E006370E2 /* Views */,
 				B7C928E52CBE9B73006370E2 /* ToDoSwiftUIApp.swift */,
@@ -165,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B718CB962CC7EDD7003BDAEB /* TaskListViewModel.swift in Sources */,
 				B7C928FB2CBEB5C3006370E2 /* Task.swift in Sources */,
 				B7C928E82CBE9B73006370E2 /* TaskListView.swift in Sources */,
 				B7C928E62CBE9B73006370E2 /* ToDoSwiftUIApp.swift in Sources */,

@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import CoreData
 
-struct Task: Identifiable {
-    let id: UUID = UUID()
-    let title: String
+class Task: NSManagedObject, Identifiable {
+    @NSManaged var title: String?
+    @NSManaged var content: String?
+    
+    static func fetchAllTaskRequest() -> NSFetchRequest<Task> {
+        return NSFetchRequest<Task>(entityName: "Task")
+    }
 }

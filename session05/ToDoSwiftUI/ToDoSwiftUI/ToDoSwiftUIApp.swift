@@ -14,7 +14,7 @@ struct ToDoSwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TaskListView()
+            TaskListView().environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
