@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B719AE6E2D087FFE001D827A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE6D2D087FFE001D827A /* ContentView.swift */; };
+		B719AE702D088149001D827A /* ShoeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE6F2D088149001D827A /* ShoeListView.swift */; };
+		B719AE722D08815D001D827A /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE712D08815D001D827A /* ShoeListViewModel.swift */; };
+		B719AE742D08816D001D827A /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE732D08816D001D827A /* Shoe.swift */; };
+		B719AE762D088177001D827A /* ShoeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE752D088177001D827A /* ShoeResponse.swift */; };
+		B719AE782D088181001D827A /* ShoeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE772D088181001D827A /* ShoeService.swift */; };
+		B719AE7A2D088301001D827A /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AE792D088301001D827A /* HttpRequestHelper.swift */; };
 		B7282ADA2D0875DE00A0E641 /* EazyShoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7282AD92D0875DE00A0E641 /* EazyShoesApp.swift */; };
-		B7282ADC2D0875DE00A0E641 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7282ADB2D0875DE00A0E641 /* ContentView.swift */; };
 		B7282ADE2D0875DF00A0E641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7282ADD2D0875DF00A0E641 /* Assets.xcassets */; };
 		B7282AE12D0875DF00A0E641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7282AE02D0875DF00A0E641 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B719AE6D2D087FFE001D827A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B719AE6F2D088149001D827A /* ShoeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListView.swift; sourceTree = "<group>"; };
+		B719AE712D08815D001D827A /* ShoeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
+		B719AE732D08816D001D827A /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
+		B719AE752D088177001D827A /* ShoeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeResponse.swift; sourceTree = "<group>"; };
+		B719AE772D088181001D827A /* ShoeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeService.swift; sourceTree = "<group>"; };
+		B719AE792D088301001D827A /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		B7282AD62D0875DE00A0E641 /* EazyShoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyShoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7282AD92D0875DE00A0E641 /* EazyShoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EazyShoesApp.swift; sourceTree = "<group>"; };
-		B7282ADB2D0875DE00A0E641 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7282ADD2D0875DF00A0E641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7282AE02D0875DF00A0E641 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,9 +64,15 @@
 			isa = PBXGroup;
 			children = (
 				B7282AD92D0875DE00A0E641 /* EazyShoesApp.swift */,
-				B7282ADB2D0875DE00A0E641 /* ContentView.swift */,
 				B7282ADD2D0875DF00A0E641 /* Assets.xcassets */,
 				B7282ADF2D0875DF00A0E641 /* Preview Content */,
+				B719AE6D2D087FFE001D827A /* ContentView.swift */,
+				B719AE6F2D088149001D827A /* ShoeListView.swift */,
+				B719AE712D08815D001D827A /* ShoeListViewModel.swift */,
+				B719AE732D08816D001D827A /* Shoe.swift */,
+				B719AE752D088177001D827A /* ShoeResponse.swift */,
+				B719AE772D088181001D827A /* ShoeService.swift */,
+				B719AE792D088301001D827A /* HttpRequestHelper.swift */,
 			);
 			path = EazyShoes;
 			sourceTree = "<group>";
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7282ADC2D0875DE00A0E641 /* ContentView.swift in Sources */,
+				B719AE6E2D087FFE001D827A /* ContentView.swift in Sources */,
+				B719AE782D088181001D827A /* ShoeService.swift in Sources */,
+				B719AE722D08815D001D827A /* ShoeListViewModel.swift in Sources */,
+				B719AE7A2D088301001D827A /* HttpRequestHelper.swift in Sources */,
+				B719AE702D088149001D827A /* ShoeListView.swift in Sources */,
+				B719AE742D08816D001D827A /* Shoe.swift in Sources */,
 				B7282ADA2D0875DE00A0E641 /* EazyShoesApp.swift in Sources */,
+				B719AE762D088177001D827A /* ShoeResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
